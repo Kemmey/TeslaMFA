@@ -1,0 +1,6 @@
+framework module Pods_TeslaAuthV3 {
+  umbrella header "Pods-TeslaAuthV3-umbrella.h"
+
+  export *
+  module * { export * }
+}
