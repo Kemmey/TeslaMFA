@@ -81,7 +81,7 @@ class ViewController: UIViewController {
     }
     
     func renew() {
-        let refreshToken = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Im9UaDR1ZXNoM2tlZXpvWDB1In0.eyJpc3MiOiJodHRwczovL2F1dGgudGVzbGEuY29tL29hdXRoMi92MyIsImF1ZCI6Imh0dHBzOi8vYXV0aC50ZXNsYS5jb20vb2F1dGgyL3YzL3Rva2VuIiwiaWF0IjoxNjA0MzU2MTAxLCJzY3AiOlsib3BlbmlkIiwib2ZmbGluZV9hY2Nlc3MiXSwiZGF0YSI6eyJ2IjoiMSIsImF1ZCI6Imh0dHBzOi8vb3duZXItYXBpLnRlc2xhbW90b3JzLmNvbS8iLCJzdWIiOiI4ODVhOWUxNS02YzgxLTQ3ZjktOWYwYy0xZWFkNzllMWJiNmQiLCJzY3AiOlsib3BlbmlkIiwiZW1haWwiLCJvZmZsaW5lX2FjY2VzcyJdLCJhenAiOiJvd25lcmFwaSIsImFtciI6WyJwd2QiLCJtZmEiLCJvdHAiXX19.OJLzjBNi2vZKsqMFUMcCmtw7V27Yyn-D_9zProqepMl0KSg_6Xj7cTSkFJHaTI4v7JVAcMCXgaNXoxhoKrLtk6uycL7XqaYhc1MG5sSHDQSBqzOXAjyjz_ZZZgxYj5392kZAKBe-nz4d_NWlLrQTexNaoO6A1F0Ferm5ys6FdsWeujJDx9tHMZjazwwPrwWIipki-gdehQPhsEiN6t1BLCjdQ-KLMvDiYpkQRMUNMyjc3AJYjmUisnlo1iGHby1P58g48UnxpPVeD193V2dAn70Gfv1JmYIPpsQbqUXKUP0XsEvdcO1hJ_Dx5XI6LfvwhCpW7WvNy5YOWl51ZMxxXw"//credential?.oauthRefreshToken
+        let refreshToken = credential?.oauthRefreshToken ?? ""
         //{
             var parameters = OAuthSwift.Parameters()
             parameters["scope"] = "openid email offline_access"
